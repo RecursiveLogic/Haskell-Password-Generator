@@ -10,7 +10,7 @@ main = do
 greetings :: IO ()
 greetings = putStrLn "\n*** Welcome to the Haskell Password Generator ***"
 
-ioActions :: IO() 
+ioActions :: IO () 
 ioActions = do
     charTypes <- getCharacterTypes
     if valid charTypes
