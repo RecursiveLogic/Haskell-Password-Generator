@@ -33,7 +33,7 @@ makePasswords :: String -> IO ()
 makePasswords types = do
     putStrLn "Enter the number of desired passwords:"
     number <- fmap read getLine
-    putStrLn "Enter length of password"
+    putStrLn "Enter length of password:"
     length <- fmap read getLine
     generator <- getStdGen
     -- Password
